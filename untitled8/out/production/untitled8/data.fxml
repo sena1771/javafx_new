@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="scenePane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DataController">
+   <children>
+      <Label fx:id="nameLabel" layoutX="217.0" layoutY="14.0" prefHeight="91.0" prefWidth="91.0" text="Hello" />
+      <Button fx:id="logoutButton" layoutX="14.0" layoutY="345.0" mnemonicParsing="false" onAction="#logout" text="logout" />
+      <ImageView fx:id="Image" fitHeight="169.0" fitWidth="191.0" layoutX="405.0" layoutY="14.0" onMouseEntered="#displayImage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@user.png" />
+         </image></ImageView>
+      <Button fx:id="ImageChange" layoutX="420.0" layoutY="181.0" mnemonicParsing="false" onAction="#displayImage" text="change the photo" />
+      <Label fx:id="label" layoutX="32.0" layoutY="46.0" text="Welcome" />
+      <Label layoutX="28.0" layoutY="105.0" text="enter your age" />
+      <TextField fx:id="textField" layoutX="14.0" layoutY="144.0" prefHeight="39.0" prefWidth="129.0" />
+      <Button fx:id="submit" layoutX="31.0" layoutY="181.0" mnemonicParsing="false" onAction="#submit" text="Submit" />
+   </children>
+</AnchorPane>

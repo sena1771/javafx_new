@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SceneController">
+   <children>
+      <AnchorPane fx:id="pane" layoutX="-81.0" layoutY="-17.0" prefHeight="548.0" prefWidth="892.0">
+         <children>
+            <Button layoutX="681.0" layoutY="30.0" mnemonicParsing="false" onAction="#switchingScene" text="Switch" />
+            <CheckBox fx:id="checkBox" layoutX="95.0" layoutY="495.0" mnemonicParsing="false" onAction="#change" text="ON/OFF" />
+            <Label fx:id="off" layoutX="95.0" layoutY="441.0" text="OFF" />
+            <ImageView fx:id="viewimage" fitHeight="140.0" fitWidth="180.0" layoutX="82.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Untitled.png" />
+               </image>
+            </ImageView>
+            <RadioButton fx:id="pizza" layoutX="95.0" layoutY="150.0" mnemonicParsing="false" onAction="#food" text="pizza">
+               <toggleGroup>
+                  <ToggleGroup fx:id="food" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="burger" layoutX="278.0" layoutY="150.0" mnemonicParsing="false" onAction="#food" text="burger" toggleGroup="$food" />
+            <RadioButton fx:id="meat" layoutX="464.0" layoutY="150.0" mnemonicParsing="false" onAction="#food" text="meat" toggleGroup="$food" />
+            <Label fx:id="select" layoutX="117.0" layoutY="18.0" prefHeight="102.0" prefWidth="398.0" text="select what you want to eat">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="date" layoutX="588.0" layoutY="144.0" onAction="#getDate" promptText="Select a date" />
+            <Label fx:id="label1" layoutX="556.0" layoutY="215.0" prefHeight="27.0" prefWidth="301.0" text="label" />
+            <ColorPicker fx:id="colorpicker" layoutX="265.0" layoutY="223.0" onAction="#changeColor" />
+            <ChoiceBox fx:id="choice" layoutX="253.0" layoutY="320.0" prefWidth="150.0" />
+            <Label fx:id="selecting" alignment="CENTER" layoutX="248.0" layoutY="279.0" prefHeight="27.0" prefWidth="150.0" text="Select" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

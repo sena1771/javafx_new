@@ -1,0 +1,8 @@
+.root {
+-fx-background-color:red;
+}
+#circle {
+-fx-color: red;}
+.label {
+-fx-text-fill: white;
+ -fx-alignment: center;}
